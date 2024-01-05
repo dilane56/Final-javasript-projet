@@ -1,0 +1,795 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Orbitron', sans-serif;*/
+    font-family: 'Girassol', serif;
+     
+}
+body{
+    max-height: 100vh;
+   max-width: 100vw;
+   background: #2b5876;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+
+   background-size: 400% 400%;
+   animation: gradient-animation 5s ease infinite; /* 10s pour la durée de l'animation */
+   
+}
+header h1{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+nav svg{
+    width: 25px;
+    height: 25px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+main{
+    display: flex;
+    flex-direction: row;
+   display: flex;
+   flex-wrap: nowrap;
+   height: 100vh;
+   overflow-x: auto;
+   overflow-y: hidden;
+  
+}
+.projet{
+    display: none;
+}
+nav{
+    background-color:#212529!important;
+    color: aliceblue;     
+}
+
+.nav-link{
+    color: white;   
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    /*height: 6.4rem;*/
+}
+section{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+header h1{
+    margin-left: 10px;
+}
+header div{
+    margin-right: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+  /*  height: 6rem;*/
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    margin-bottom: 0px;
+   padding: 0px; 
+   color: white; 
+    
+}
+footer svg{
+    height: 24px;
+    width: 24px;
+}
+#container{
+    display: flex;
+    flex: 1; /* Occupe l'espace disponible et pousse le footer vers le bas */
+    height: 78%;
+    flex-direction: row;
+    gap: 15px;
+   
+}
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 4px black solid;
+    border-radius: 10px;
+    width: 40%;
+    color: white;
+    box-shadow: 10px 5px 5px black;
+}
+.profil img{
+    width: 35vh;
+    height: 30vh;
+}
+button svg{
+    width: 20px;
+    height: 20px;
+}
+.info{
+   
+    width: 60%;
+    padding: 20px;
+    border: 4px black solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px -5px 5px black;
+        
+}
+.info h3{
+    border-bottom: 6px solid gray;
+   
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+   
+}
+table{
+    width: 100%;
+    margin-left: 5px;
+    color: white;
+}
+header, footer {
+    background-color: #212529!important; /* Gris foncé */
+    color: #ffffff; /* Blanc pour le texte */
+    height: 11%;
+
+}
+header img{
+    width:62px;
+     height:62px ;
+}
+.foot{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vh;
+    list-style: none;
+    margin-right: 1vh;
+}
+
+iframe{
+    display: none;
+    
+}
+button{
+    color: white;
+    background-color: #212529;
+    border: none;
+  
+    
+}
+table tr:hover{
+    transform:  translateY(-6px);
+   
+}
+.info:hover{
+    transform:  translateY(6px);
+}
+.profil:hover{
+    transform:  translateY(6px);
+}
+.profil h3:hover{
+    transform:  translateY(6px);
+   
+}
+button:hover{ 
+    width: 100%;
+    background-color:  #0d6efd!important;
+    border-radius: 5px;
+    box-shadow: 10px -5px 5px yellowgreen;
+    transform:  translateY(2px);
+   
+
+}
+button:active{
+    background-color: #0d6efd;
+    
+}
+
+.active
+{
+    background-color:#0d6efd;
+    
+
+    
+    border-radius:.25rem;
+    width: 100%;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    
+}
+#twitter {
+    fill: #3498db; /* Couleur bleue vive (exemple) */
+}
+#instagram {
+    fill: #bc2a8d; /* Couleur rose vif (exemple) */
+}
+#facebook {
+    fill: #3b5998; /* Couleur bleue foncée (exemple) */
+}
+.d-flex flex-column flex-shrink-0 p-3 {
+    width: 250px;
+}
+.space{
+    height: 5px;
+    border: 2px solid ;
+    
+}
+.info,.profil{
+    animation:echec 2s ease-in;
+
+}
+@keyframes echec{
+ 0%{
+    transform: translateX(0px);
+ }    
+ 33%{
+    transform : translateX(5px);
+}
+66%{
+    transform: translateX(-5px);
+}
+100%{
+    transform: translateX(0px); 
+}
+
+}
+@keyframes deroule{
+    0%{
+        left: -200px;
+    }  
+    30%{
+        left: -100px;
+    }  
+    60%{
+        left: -50px;
+    }    
+   
+   100%{
+    left: 0px;
+   /* transition: left 0.1s ease; */
+} 
+   }
+   .com{
+    font-size: 1.25em;
+   }
+  
+
+
+
+
+/* Nouvelles règles si la largeur maximale de la fenetre est de 1140 */
+@media screen and (max-width: 1200px) {
+   main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+    
+   }
+   header,footer{
+    height: 10%;
+   }
+   .nav{
+    width: 100%;
+    
+    
+   }
+   .button{
+    width: 100%;
+    
+   }
+   button{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+   }
+   section{
+    width: 100%;
+    height: 100%;
+    
+    overflow:scroll;
+    
+   }
+   #container{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+   
+   }
+   .info{
+    width: 100%;
+    height: 60%;
+   }
+   table{
+    width: 100%;
+   }
+   .profil{
+    height: 40%;
+    width: 100%;
+    gap: 3px;
+   }
+   .profil img{
+    width: 23vh;
+    height: 20vh;
+    
+   }
+   .profil h3, .info h3{
+    font-size: 1.5em;
+   }
+   .active{
+    width: 100%;
+   }
+   header{
+    
+    margin-bottom: 0px;
+   }
+   
+  
+
+.d-flex flex-column flex-shrink-0 p-3  {
+    height: 85%;
+}
+
+ header h1{
+    font-size: 1.5em;
+}
+header h2, .com{
+    font-size: 1.3em;
+}
+
+nav{
+    overflow:scroll ; 
+   
+  }
+ 
+
+}
+
+
+
+
+
+@media screen and (max-width: 770px) {
+
+body{ 
+    height: 100%;
+    width: 100%;    
+}    
+header,footer
+{
+   height: 8%;
+    
+}
+header img
+{
+    width: 42px;
+    height: 42px;
+ }
+header h1{
+    font-size: 1.2em;
+ }
+header h2{
+    font-size: 1em;
+ }
+table h3
+{
+    font-size: 0.8em;
+ }
+.profil h3,.info h3
+{
+    font-size: 0.8em ;
+        
+}
+.profil img{
+    height: 20vh;
+    width: 20vh;
+}
+.profil
+{
+     height: 40%;
+ }
+.info
+{
+     height: 60%;
+
+        
+}
+ #container
+ {
+        height: 84%;
+        width: 100%;
+ }
+
+ nav ul{
+    width: 100%;
+   
+  }
+  li{
+    width: 100%;
+   
+  }
+  button{
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  main{
+    display: grid;
+    grid-template-columns: 28% 72%;
+   
+    
+   }
+   .com{
+    font-size: 1em;
+   }
+   
+   .foot svg{
+    height: 16px;
+    width: 16px;
+   }
+
+      
+
+
+   
+}
+
+
+
+
+@media screen and (max-width: 665px) {
+
+table{
+    
+   height: 100%;  
+  
+}
+header,footer
+{
+   height: 5em;
+    
+}
+nav{
+    font-size: 0.8em;
+    overflow: hidden;
+}
+#container{
+    height: 100%;
+}
+.com{
+    font-size: 0.75em;
+}
+.foot svg{
+    height: 14px;
+    width: 14px;
+}
+.foot{
+    padding-top: 12px;
+}
+
+
+section{
+    overflow: scroll;
+}
+h3{
+    padding: 0px;
+}
+.profil img{
+    width: 17vh;
+    height: 15vh;
+}
+
+}
+
+
+
+
+/*@media screen and (max-width: 570px) {
+
+    button{
+        height: 50px;
+    }
+    .nav{
+        align-items: start;
+        justify-content: left;
+        
+    }
+   header h1{
+        font-size: 0.8em;
+    }
+  header  h2{
+        font-size: 0.6em;
+    }
+    header img{
+        width: 18px;
+        height: 18px;
+    }
+    .active{
+        width: auto;
+        overflow: visible;
+        height: auto;
+    }
+    
+    
+}*/
+
+
+
+
+
+@media screen and (max-width: 580px) {
+
+.projet{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #212529;
+    position: relative;
+}
+button svg{
+    width: 15px;
+    height: 15px;
+}
+
+
+.projet button{
+    margin-left: 10px;
+}
+
+button img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+   /* display: none;*/
+    position: absolute;
+    top: 16.5%;
+    bottom: 8.5%;
+
+   
+    left: -100%;
+    transition: left 0.5s ease; /* Utilisation de la propriété 'left' avec une transition de 0.5 seconde */
+    
+}
+iframe{
+    height: 76%;
+}
+.side.active{
+   left: 0%;
+   width: 60%;
+}
+
+nav img{
+    display: none;
+}
+main{
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    
+}
+button i{
+    font-size: 3.2em;
+    width: 100%;
+    
+}
+.logo{
+    width: 30%;
+}
+#sidebar{
+   width: 5rem;
+}
+
+
+header,footer,.projet{
+    height: 8%;
+}
+
+header h1,.com{
+    font-size: 1em;
+}
+header h2{
+    font-size: 0.8em;
+}
+.foot svg{
+    height: 18px;
+    width: 18px;
+}
+.profil img{
+    width: 150px;
+    height: 150px;
+}
+.profil{
+    font-size: 1.2rem;
+    gap: 10px;
+   
+}
+
+.info h3{
+    font-size: 1rem;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+    border-bottom: 1.1vh solid gray;
+}
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    header h1,.com{
+        font-size: 1rem;
+    }
+    header h2{
+        font-size: 0.6em;
+    }
+    header img{
+        width: 30px;
+        height: 30px;
+    }
+    .foot svg{
+       height: 1.2vh;
+       width: 1.2vh;
+    }
+    
+    table{
+        overflow: auto;
+        min-width: 200px;
+    }
+    .profil img{
+        width: 100px;
+        height: 100px;
+    }
+    .profil h3, .info h3{
+        font-size: 0.2rem;
+    }
+    nav{
+        position: absolute;
+        top: 14%;
+        bottom: 6%;
+    
+        left: -100%;
+}
+
+   
+   
+  
+
+    
+}
+@media screen and (max-width: 240px) {
+
+    nav{
+        right:200%;
+    }
+}
+
+
+
+@media screen and (max-height: 700px) {
+    /* Vos styles CSS spécifiques pour le mode paysage ici */
+    
+.profil img{
+    width: 15vh;
+    height: 12vh;
+}
+header img{
+    width: 4vh;
+    height: 4vh;
+}
+
+#sidebar{
+    width: 3rem;
+    height: auto;
+}
+.logo img{
+    
+   height: auto; 
+}
+.projet, header, footer {
+   height: 11vh; 
+   
+}
+#container{
+    height: 67vh;
+    overflow: auto;
+}
+.info h3{
+    font-size: 0.85rem;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+    border-bottom: 1.5vh solid gray;
+}
+.profil{
+    height: 40%;
+}
+.profil h3{
+    font-size: 1rem;
+}
+
+header h1, .com{
+    font-size: 0.8rem;
+}
+
+header h2{
+    font-size: 0.8rem;
+}
+.foot svg{
+    width: 3vh;
+    height: 3vh;
+}
+
+.col-md-4{
+    margin-bottom: 5%;
+}
+.foot{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vh;
+}
+nav{
+    overflow: scroll;
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-height: 300px) {
+
+
+
+
+}
+
+
+    
+
+
+
+
+
+
+
+
